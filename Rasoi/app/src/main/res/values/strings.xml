@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Rasoi</string>
+    <string-array name="spinner_items_array">
+        <item>Amateur</item>
+        <item>Home Cook</item>
+        <item>Professional Chef</item>
+        <!-- Add more items as needed -->
+    </string-array>
+</resources>

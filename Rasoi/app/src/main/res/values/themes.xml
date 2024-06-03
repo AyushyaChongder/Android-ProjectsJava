@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Rasoi" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.Rasoi" parent="Base.Theme.Rasoi" />
+    <style name="DialoAnimation">
+        <item name="android:windowEnterAnimation">
+            @anim/slide_in_bottom
+        </item>
+        <item name="android:windowExitAnimation">
+            @anim/slide_out_bottom
+        </item>
+    </style>
+    <style name="SwitchStyle">
+        <item name="android:fontFamily">@font/poppins</item>
+        <!-- Add any other style attributes you want to customize -->
+    </style>
+
+
+</resources>

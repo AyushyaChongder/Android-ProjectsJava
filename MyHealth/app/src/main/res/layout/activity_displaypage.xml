@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".displaypage">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="173dp"
+        android:layout_height="161dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/flo_bg" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="368dp"
+        android:layout_height="450dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_borders"
+        android:backgroundTint="#F4EEEF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        app:layout_constraintVertical_bias="0.238">
+
+        <TextView
+            android:id="@+id/dname"
+            android:layout_width="191dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="28dp"
+            android:fontFamily="@font/poppins"
+            android:textColor="#D85463"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/demail"
+            android:layout_width="189dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="28dp"
+            android:fontFamily="@font/poppins"
+            android:textColor="#D85463"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dname" />
+
+        <TextView
+            android:id="@+id/dphone"
+            android:layout_width="191dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins"
+            android:textColor="#D85463"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.315"
+            app:layout_constraintStart_toEndOf="@+id/textView9"
+            app:layout_constraintTop_toBottomOf="@+id/demail" />
+
+        <TextView
+            android:id="@+id/dage"
+            android:layout_width="191dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="28dp"
+            android:fontFamily="@font/poppins"
+            android:textColor="#D85463"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dphone" />
+
+        <TextView
+            android:id="@+id/startdate"
+            android:layout_width="191dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="28dp"
+            android:fontFamily="@font/poppins"
+            android:textColor="#D85463"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/textView13"
+            app:layout_constraintTop_toBottomOf="@+id/dage" />
+
+        <TextView
+            android:id="@+id/enddate"
+            android:layout_width="191dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="28dp"
+            android:fontFamily="@font/poppins"
+            android:textColor="#D85463"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/textView13"
+            app:layout_constraintTop_toBottomOf="@+id/startdate" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="107dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="28dp"
+            android:fontFamily="@font/poppins"
+            android:text="Name"
+            android:textColor="#D85463"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/dname"
+            app:layout_constraintHorizontal_bias="0.815"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="107dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins"
+            android:text="Email"
+            android:textColor="#D85463"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/demail"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="106dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/poppins"
+            android:text="Age"
+            android:textColor="#D85463"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="107dp"
+            android:layout_height="63dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/poppins"
+            android:text="Period Timing"
+            android:textColor="#D85463"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="107dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="28dp"
+            android:fontFamily="@font/poppins"
+            android:text="Phone"
+            android:textColor="#D85463"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="154dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins"
+        android:text="Details"
+        android:textAlignment="center"
+        android:textColor="#D85463"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/drawer_layout"
+    android:layout_height="match_parent"
+    android:background="#FFFEFE"
+    tools:context=".Homepage"
+    app:headerLayout="@layout/header"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="end">
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:id="@+id/nav_view"
+        app:menu="@menu/main_menu"
+        app:headerLayout="@layout/header"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_icon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="#00008577"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navigationIcon="@drawable/menu"/>
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins"
+            android:text="Welcome to NoteShare"
+            android:textAlignment="center"
+            android:textColor="#E45D65"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar_icon" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="292dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/poppins"
+            android:text="One Stop Solution for all your notes"
+            android:textAlignment="center"
+            android:textColor="#A6A6A6"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabswitch"
+            android:layout_width="353dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/rounded_textview"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView8"
+            app:tabIndicatorAnimationDuration="250"
+            app:tabIndicatorColor="#E45D65"
+            app:tabIndicatorFullWidth="true"
+            app:tabIndicatorHeight="5dp"
+            app:tabMode="fixed"
+            app:tabTextColor="#E45D65">
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/thisweek"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SUBJECTS" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/others"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YOUR FRIENDS"
+                tools:layout_editor_absoluteX="266dp"
+                tools:layout_editor_absoluteY="78dp" />
+
+        </com.google.android.material.tabs.TabLayout>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/view_pager"
+            android:layout_width="395dp"
+            android:layout_height="566dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tabswitch"
+            app:layout_constraintVertical_bias="0.024">
+
+        </androidx.viewpager2.widget.ViewPager2>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

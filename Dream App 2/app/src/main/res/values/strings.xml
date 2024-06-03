@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">Dream App 2</string>
+    <string name="logo_description">A common logo for the entire dream app</string>
+    <string name="welcome_screen_text">Welcome to</string>
+    <string name="app_title">Artist\'s Lounge</string>
+    <string name="welcome_subtext">A place where you can sit back, relax, and browse through your favorite artists and their works</string>
+    <string name="login">Login</string>
+    <string name="profile">Profile</string>
+    <string name="logout">Logout</string>
+    <string name="settings">Settings</string>
+    <string name="exit">Exit</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="renter_password">Re-enter your password</string>
+    <string name="gender_title">Choose a gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="signup">SignUp</string>
+    <string name="scroll_desc">Scrollable content</string>
+    <string name="profile_description">Goto Profile section</string>
+    <string name="logo_desc">App logo</string>
+    <string name="page_title">Welcome, Ryan</string>
+    <string name="state_title">Choose your state</string>
+    <string-array name="states">
+        <item>Andhra Pradesh</item>
+        <item>Arunachal Pradesh</item>
+        <item>Assam</item>
+        <item>Bihar</item>
+        <item>Chhattisgarh</item>
+        <item>Goa</item>
+        <item>Gujarat</item>
+        <item>Haryana</item>
+        <item>Himachal Pradesh</item>
+        <item>Jharkhand</item>
+        <item>Karnataka</item>
+        <item>Kerala</item>
+        <item>Madhya Pradesh</item>
+        <item>Maharashtra</item>
+        <item>Manipur</item>
+        <item>Meghalaya</item>
+        <item>Mizoram</item>
+        <item>Nagaland</item>
+        <item>Odisha</item>
+        <item>Punjab</item>
+        <item>Rajasthan</item>
+        <item>Sikkim</item>
+        <item>Tamil Nadu</item>
+        <item>Telangana</item>
+        <item>Tripura</item>
+        <item>Uttar Pradesh</item>
+        <item>Uttarakhand</item>
+        <item>West Bengal</item>
+    </string-array>
+    <string name="terms">Check to accept our terms and condition</string>
+    <string name="spinner_desc">Spinner that contains the different states of India</string>
+    <string name="email">Email</string>
+    <string name="update_profile">Update profile</string>
+    <string name="add_profile">Add or edit your profile</string>
+    <string name="view_profile">View your profile</string>
+    <string name="user_type_text">What do you use this app for most?</string>
+    <string name="movies">Movies</string>
+    <string name="music">Music</string>
+    <string name="spinner_text">Choose your state:</string>
+    <string name="submit">Submit</string>
+    <string name="choose_image">Choose Image</string>
+    <string name="gender">Gender</string>
+    <string name="state">State</string>
+    <string name="go_back">Goes back</string>
+    <string name="movie_btn">Movies Toggle Button</string>
+    <string name="music_btn">Music Toggle Button</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="booking_heading">See about your movies here</string>
+    <string name="oppenheimer">Oppenheimer</string>
+    <string name="barbie">Barbie</string>
+    <string name="mi7">Mission Impossible: Dead Reckoning</string>
+    <string name="spiderverse">Into The Spiderverse</string>
+    <string name="music_player">Music Player</string>
+    <string name="previous">Starts a song from beginning or skips to the previous song</string>
+    <string name="play">Plays the current song</string>
+    <string name="pause">Pauses the current song</string>
+    <string name="next">Skips to the next song</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+</resources>

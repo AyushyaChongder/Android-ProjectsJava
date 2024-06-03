@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/filter_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_bg"
+    android:backgroundTint="@color/white"
+    tools:ignore="MissingDefaultResource">
+
+    <ScrollView
+        android:layout_width="410dp"
+        android:layout_height="787dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="177dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppins"
+                android:text="Filter Your Search"
+                android:textColor="#4E7543"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.068"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="230dp"
+                android:layout_height="22dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppins"
+                android:text="Choose Recipe Standard"
+                android:textColor="#8C938B"
+                android:textSize="16sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.111"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="230dp"
+                android:layout_height="22dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppins"
+                android:text="Choose Dietary Preferences"
+                android:textColor="#8C938B"
+                android:textSize="16sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.111"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="173dp"
+                android:layout_height="23dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppins"
+                android:text="Choose Spice Level"
+                android:textColor="#8C938B"
+                android:textSize="16sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.067"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider4" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+                android:id="@+id/mild"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                android:layout_margin="16dp"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="89dp"
+                android:contentDescription="@string/app_name"
+                app:backgroundTint="#FFC107"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/medium"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView8"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/baseline_fastfood_24" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+                android:id="@+id/medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                android:layout_margin="16dp"
+                android:layout_marginStart="53dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="141dp"
+                android:contentDescription="@string/app_name"
+                app:backgroundTint="#FF851A"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/hot"
+                app:layout_constraintStart_toEndOf="@+id/mild"
+                app:layout_constraintTop_toBottomOf="@+id/textView8"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/baseline_fastfood_24" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+                android:id="@+id/hot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                android:layout_margin="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="40dp"
+                android:contentDescription="@string/app_name"
+                app:backgroundTint="#AC1717"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.708"
+                app:layout_constraintStart_toEndOf="@+id/medium"
+                app:layout_constraintTop_toBottomOf="@+id/textView8"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/baseline_fastfood_24" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="170dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins"
+                android:text="Choose Meal Type"
+                android:textColor="#8C938B"
+                android:textSize="16sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.079"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+            <RadioGroup
+                android:id="@+id/choices"
+                android:layout_width="370dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.41"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView3">
+
+                <RadioButton
+                    android:id="@+id/starter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="49dp"
+                    android:buttonTint="#74E467"
+                    android:fontFamily="@font/poppins"
+                    android:text="Appetizer"
+                    android:textColor="#4F8C48" />
+
+                <RadioButton
+                    android:id="@+id/maincourse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="49dp"
+                    android:buttonTint="#74E467"
+                    android:fontFamily="@font/poppins"
+                    android:text="Main Course"
+                    android:textColor="#4F8C48" />
+
+                <RadioButton
+                    android:id="@+id/dessert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="49dp"
+                    android:buttonTint="#74E467"
+                    android:fontFamily="@font/poppins"
+                    android:text="Dessert"
+                    android:textColor="#4F8C48" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="192dp"
+                android:layout_height="23dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/poppins"
+                android:text="Select Your Choice"
+                android:textColor="#8C938B"
+                android:textSize="12sp"
+                android:textStyle="italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.073"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="380dp"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="16dp"
+                android:background="#CCECA1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/choices" />
+
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="16dp"
+                android:background="#CCECA1"
+                app:layout_constraintBottom_toTopOf="@+id/textView4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/list" />
+
+            <View
+                android:id="@+id/divider4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="#CCECA1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/switch4" />
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:background="#CCECA1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/medium" />
+
+            <Switch
+                android:id="@+id/switch1"
+                style="@style/SwitchStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="17dp"
+                android:text="Veg"
+                android:textColor="#4F8C48"
+                android:textSize="12sp"
+                android:trackTint="#4E7543"
+                app:layout_constraintBottom_toTopOf="@+id/divider4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            <Switch
+                android:id="@+id/switch4"
+                style="@style/SwitchStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginTop="16dp"
+                android:text="Gluten-Free"
+                android:textColor="#4F8C48"
+                android:textSize="12sp"
+                android:trackTint="#4E7543"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/switch3"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+            <Switch
+                android:id="@+id/switch2"
+                style="@style/SwitchStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="17dp"
+                android:text="Non-Veg"
+                android:textColor="#4F8C48"
+                android:textSize="12sp"
+                android:trackTint="#4E7543"
+                app:layout_constraintBottom_toTopOf="@+id/divider4"
+                app:layout_constraintStart_toEndOf="@+id/switch1"
+                app:layout_constraintTop_toBottomOf="@+id/textView4"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            <Switch
+                android:id="@+id/switch3"
+                style="@style/SwitchStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="17dp"
+                android:text="Vegan"
+                android:textColor="#4F8C48"
+                android:textSize="12sp"
+                android:trackTint="#4E7543"
+                app:layout_constraintBottom_toTopOf="@+id/divider4"
+                app:layout_constraintStart_toEndOf="@+id/switch2"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+            <Spinner
+                android:id="@+id/list"
+                android:layout_width="251dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="24dp"
+                android:alpha="0.8"
+                android:entries="@array/spinner_items_array"
+                android:spinnerMode="dropdown"
+                app:layout_constraintBottom_toTopOf="@+id/divider3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.12"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="30dp"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/rounded_card"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    tools:context=".DisplayFragment">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="323dp"
+        android:layout_height="190dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/login_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/eml"
+        android:layout_width="321dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="64dp"
+        android:fontFamily="@font/poppins"
+        android:hint="Email"
+        android:textAlignment="viewStart"
+        android:textColor="#145116"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/pwd"
+        android:layout_width="321dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/poppins"
+        android:hint="Password"
+        android:textAlignment="viewStart"
+        android:textColor="#145116"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eml" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

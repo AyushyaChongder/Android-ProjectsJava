@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_item_id"
+        android:icon="?attr/homeAsUpIndicator"
+        android:title="Home"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/menu_item_id1"
+        android:title="Log In"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/menu_item_id2"
+        android:title="Aptitude Tests"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/menu_item_id3"
+        android:title="Weekly Seminar"
+        app:showAsAction="ifRoom" />
+    <item
+    android:id="@+id/menu_item_id4"
+    android:title="Recent Jobs" app:showAsAction="ifRoom" />
+</menu>

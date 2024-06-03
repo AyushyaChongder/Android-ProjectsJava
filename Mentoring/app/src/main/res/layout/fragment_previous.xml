@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.PreviousFragment">
+
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="392dp"
+        android:layout_height="442dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.046">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/box1"
+                android:layout_width="355dp"
+                android:layout_height="86dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/rounded_borders_bg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.513"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/session1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="39dp"
+                    android:layout_marginStart="32dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Session 1"
+                    android:textAlignment="center"
+                    android:textColor="#173884"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.505" />
+
+                <Button
+                    android:id="@+id/s1_view_details"
+                    android:layout_width="122dp"
+                    android:layout_height="58dp"
+                    android:backgroundTint="#173883"
+                    android:fontFamily="@font/poppins"
+                    android:text="View Details"
+                    android:textColor="#FFFFFF"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.833"
+                    app:layout_constraintStart_toEndOf="@+id/session1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.592" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/box2"
+                android:layout_width="355dp"
+                android:layout_height="86dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/rounded_borders_bg"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/box1">
+
+                <TextView
+                    android:id="@+id/session2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="39dp"
+                    android:layout_marginStart="32dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Session 2"
+                    android:textAlignment="center"
+                    android:textColor="#173884"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.505" />
+
+                <Button
+                    android:id="@+id/s2_view_details"
+                    android:layout_width="122dp"
+                    android:layout_height="58dp"
+                    android:backgroundTint="#173883"
+                    android:fontFamily="@font/poppins"
+                    android:text="View Details"
+                    android:textColor="#FFFFFF"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.833"
+                    app:layout_constraintStart_toEndOf="@+id/session2"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.592" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

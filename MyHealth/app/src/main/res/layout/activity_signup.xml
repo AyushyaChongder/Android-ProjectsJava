@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".signup">
+
+    <ScrollView
+        android:layout_width="412dp"
+        android:layout_height="730dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="150dp"
+                android:layout_height="143dp"
+                android:layout_marginTop="28dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/flo_bg" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="140dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/poppins"
+                android:text="Sign Up"
+                android:textAlignment="center"
+                android:textColor="#D85463"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="190dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:fontFamily="@font/poppins"
+                android:hint="Name
+"
+                android:inputType="text"
+                android:textColor="#D85463"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+            <EditText
+                android:id="@+id/age"
+                android:layout_width="103dp"
+                android:layout_height="55dp"
+                android:layout_marginEnd="16dp"
+                android:ems="10"
+                android:fontFamily="@font/poppins"
+                android:hint="Age"
+                android:inputType="text"
+                android:textColor="#D85463"
+                app:layout_constraintBottom_toTopOf="@+id/email"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.597"
+                app:layout_constraintStart_toEndOf="@+id/name"
+                app:layout_constraintTop_toBottomOf="@+id/textView4"
+                app:layout_constraintVertical_bias="0.411" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="322dp"
+                android:layout_height="47dp"
+                android:layout_marginTop="24dp"
+                android:ems="10"
+                android:fontFamily="@font/poppins"
+                android:hint="Email ID"
+                android:inputType="textEmailAddress"
+                android:textColor="#D85463"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.333"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/name" />
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="228dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="24dp"
+                android:ems="10"
+                android:fontFamily="@font/poppins"
+                android:hint="Phone Number"
+                android:inputType="phone"
+                android:textColor="#D85463"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.163"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/email" />
+
+            <EditText
+                android:id="@+id/start_date"
+                android:layout_width="155dp"
+                android:layout_height="53dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:fontFamily="@font/poppins"
+                android:hint="Cycle Start Date"
+                android:inputType="date"
+                android:textColor="#D85463"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/phone" />
+
+            <EditText
+                android:id="@+id/end_date"
+                android:layout_width="155dp"
+                android:layout_height="53dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:fontFamily="@font/poppins"
+                android:hint="Cycle End Date"
+                android:inputType="date"
+                android:textColor="#D85463"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.442"
+                app:layout_constraintStart_toEndOf="@+id/start_date"
+                app:layout_constraintTop_toBottomOf="@+id/phone" />
+
+            <Button
+                android:id="@+id/start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#D85463"
+                android:text="Start"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/start_date" />
+
+            <Button
+                android:id="@+id/end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="60dp"
+                android:backgroundTint="#D85463"
+                android:text="End"
+                android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.9"
+                app:layout_constraintStart_toEndOf="@+id/start"
+                app:layout_constraintTop_toBottomOf="@+id/end_date" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="227dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppins"
+                android:text="How many days in between cycles?"
+                android:textColor="#D85463"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/start" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="156dp"
+                android:layout_height="29dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins"
+                android:text="How is your Cycle?"
+                android:textColor="#D85463"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="216dp"
+                android:layout_height="44dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins"
+                android:text="Did you get your periods this month?"
+                android:textColor="#D85463"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/submit"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/regular"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <EditText
+                android:id="@+id/days"
+                android:layout_width="66dp"
+                android:layout_height="44dp"
+                android:ems="10"
+                android:fontFamily="@font/poppins"
+                android:hint="Days"
+                android:inputType="text"
+                android:textColor="#D85463"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/nocycle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.218"
+                app:layout_constraintStart_toEndOf="@+id/textView6"
+                app:layout_constraintTop_toBottomOf="@+id/end"
+                app:layout_constraintVertical_bias="0.19" />
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="114dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="50dp"
+                android:backgroundTint="#D85463"
+                android:fontFamily="@font/poppins"
+                android:text="Submit"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.483"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+            <CheckBox
+                android:id="@+id/regular"
+                android:layout_width="98dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="12dp"
+                android:buttonTint="#DF3A3A"
+                android:fontFamily="@font/poppins"
+                android:text="Regular"
+                android:textColor="#DF3A3A"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+            <CheckBox
+                android:id="@+id/irregular"
+                android:layout_width="98dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="12dp"
+                android:buttonTint="#DF3A3A"
+                android:fontFamily="@font/poppins"
+                android:text="Irregular"
+                android:textColor="#DF3A3A"
+                app:layout_constraintStart_toEndOf="@+id/regular"
+                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+            <CheckBox
+                android:id="@+id/nocycle"
+                android:layout_width="98dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="12dp"
+                android:buttonTint="#DF3A3A"
+                android:fontFamily="@font/poppins"
+                android:text="No Cycle"
+                android:textColor="#DF3A3A"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.433"
+                app:layout_constraintStart_toEndOf="@+id/irregular"
+                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+            <ToggleButton
+                android:id="@+id/yes_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#D85463"
+                android:fontFamily="@font/poppins"
+                android:text="ToggleButton"
+                android:textColor="#FFFFFF"
+                android:textOff="NO"
+                android:textOn="YES"
+                app:layout_constraintBottom_toTopOf="@+id/submit"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.369"
+                app:layout_constraintStart_toEndOf="@+id/textView8"
+                app:layout_constraintTop_toBottomOf="@+id/nocycle"
+                app:layout_constraintVertical_bias="0.298" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

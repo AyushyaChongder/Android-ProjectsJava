@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="button_default_color">#E8EFEEEE</color> <!-- Replace with your default color -->
+    <color name="button_pressed_color">#59B54E</color> <!-- Replace with your pressed color -->
+    <color name="button_focused_color">#59B54E</color> <!-- Replace with your focused color -->
+    <!-- res/values/colors.xml -->
+    <!-- Define text colors for different states -->
+        <color name="button_text_default_color">#374E2D</color> <!-- Replace with your default text color -->
+        <color name="button_text_pressed_color">#FFFFFF</color> <!-- Replace with your pressed text color -->
+        <color name="button_text_focused_color">#FFFFFF</color> <!-- Replace with your focused text color -->
+
+
+</resources>

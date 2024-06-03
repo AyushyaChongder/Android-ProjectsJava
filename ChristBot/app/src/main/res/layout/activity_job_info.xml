@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".job_info"
+    android:background="#202029">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="384dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/rounded_borders"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout6">
+
+        <TextView
+            android:id="@+id/pt_2"
+            android:layout_width="161dp"
+            android:layout_height="66dp"
+            android:fontFamily="@font/poppins_light"
+            android:text="Junior Data Analyst"
+            android:textColor="#1353A8"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.255" />
+
+        <ImageView
+            android:id="@+id/test_icon2"
+            android:layout_width="62dp"
+            android:layout_height="59dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/pt_2"
+            app:layout_constraintHorizontal_bias="0.258"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.478"
+            app:srcCompat="@drawable/hp" />
+
+        <TextView
+            android:id="@+id/check2"
+            android:layout_width="83dp"
+            android:layout_height="46dp"
+            android:layout_marginEnd="16dp"
+            android:text="11th November"
+            android:textColor="#2E831F"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.216" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="137dp"
+            android:layout_height="23dp"
+            android:fontFamily="@font/poppins_light"
+            android:text="- hewlett packard(hp)"
+            android:textColor="#BF6622"
+            android:textSize="12sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.449"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pt_2"
+            app:layout_constraintVertical_bias="0.058" />
+
+        <Button
+            android:id="@+id/hp_apply_btn"
+            android:layout_width="82dp"
+            android:layout_height="37dp"
+            android:backgroundTint="#113B4E"
+            android:text="Apply"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.703"
+            app:layout_constraintStart_toEndOf="@+id/textView9"
+            app:layout_constraintTop_toBottomOf="@+id/check2"
+            app:layout_constraintVertical_bias="0.238" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout6"
+        android:layout_width="384dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/rounded_borders"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+        <TextView
+            android:id="@+id/pt_1"
+            android:layout_width="161dp"
+            android:layout_height="66dp"
+            android:fontFamily="@font/poppins_light"
+            android:text="Junior Software Engineer"
+            android:textColor="#1353A8"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.296" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_light"
+            android:text="- Google"
+            android:textColor="#BF6622"
+            android:textSize="12sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.335"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pt_1"
+            app:layout_constraintVertical_bias="0.055" />
+
+        <ImageView
+            android:id="@+id/test_icon1"
+            android:layout_width="62dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/pt_1"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.508"
+            app:srcCompat="@drawable/google" />
+
+        <TextView
+            android:id="@+id/check1"
+            android:layout_width="83dp"
+            android:layout_height="46dp"
+            android:layout_marginEnd="16dp"
+            android:text="25th September"
+            android:textColor="#2E831F"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.216" />
+
+        <Button
+            android:id="@+id/g_apply_btn"
+            android:layout_width="82dp"
+            android:layout_height="37dp"
+            android:backgroundTint="#113B4E"
+            android:text="Apply"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.884"
+            app:layout_constraintStart_toEndOf="@+id/textView6"
+            app:layout_constraintTop_toBottomOf="@+id/check1"
+            app:layout_constraintVertical_bias="0.238" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="268dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/poppins_light"
+        android:text="Recent Jobs"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/logo1"
+        android:layout_width="67dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.757"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

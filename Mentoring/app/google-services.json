@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "455497094745",
+    "project_id": "mentoring-9ebfc",
+    "storage_bucket": "mentoring-9ebfc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:455497094745:android:5c4d7b30cd1e6d45bfc348",
+        "android_client_info": {
+          "package_name": "com.example.mentoring"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "455497094745-chho8ghk0q636dfco08059ef1m2p6u70.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsx1xiR7BA0utIMKbM4NPSZviXzaliuZ0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "455497094745-chho8ghk0q636dfco08059ef1m2p6u70.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
